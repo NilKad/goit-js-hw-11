@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit">Search</button>
-    </form>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page title</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <form class="search-form" id="search-form">
+    <div class="search-form__block">
+      <input class="search-form__input" type="text" name="searchQuery" autocomplete="off"
+        placeholder="Search images..." />
+      <button class="search-form__submit" type="submit">
+        <img src="./img/search.svg" width="15" alt="search" />
+      </button>
+  </form>
+
+  <div class="gallery js-gallery">
+    <!-- <div class="photo-card">
+      <img src="http://placeimg.com/320/240/animals" alt="card-img" loading="lazy" />
+      <div class="card-info">
+        <p class="card-info__item">
+          <b>Likes</b><br>634
+        </p>
+        <p class="card-info__item">
+          <b>Views</b><br>173708
+        </p>
+        <p class="card-info__item">
+          <b>Comments</b><br>83
+        </p>
+        <p class="card-info__item">
+          <b>Downloads</b><br>115284
+        </p>
+      </div>
+    </div> -->
+
+
+
+  </div>
+  <div class="button paginations">Next</div>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

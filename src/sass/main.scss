@@ -1,0 +1,121 @@
+.search-form {
+  position: fixed;
+  top: 0;
+  // z-index: 999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #4256b5;
+}
+
+.search-form__block {
+  // border-radius: 4px;
+  position: relative;
+  // border: 2px solid black;
+}
+
+.search-form__input {
+  width: 300px;
+  height: 35px;
+  border: none;
+  padding: 8px;
+  outline: none;
+  border-radius: 4px;
+
+  &:focus {
+    // outline: 2px solid orange;
+    outline: 2px solid #72A3F2
+  }
+}
+
+.search-form__submit {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+
+  background-color: #F1EFF1;
+
+  &:hover,
+  &:focus {
+    background-color: #e1e0e1;
+  }
+}
+
+.gallery {
+  // margin-top: 55px;
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1370px;
+  width: 1350px;
+  margin-top: 10px;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  width: 320px;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px 0px rgba(110, 100, 110, 0.5);
+  transition: box-shadow 250ms linear, scale 250ms linear;
+}
+
+.photo-card:hover {
+  box-shadow: 0px 0px 10px 3px rgba(34, 60, 80, 0.5);
+}
+
+.card-info {
+  display: flex;
+  // align-items: flex-end;
+  margin-top: auto;
+  justify-content: space-around;
+  // width: 100%;
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.card-info__item {
+  // display: inline;
+}
+
+.button.paginations {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 10px;
+  border: 1px solid black;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+// card background #FBFAFB
+//text color #2d2e2f
+// card border ##F7F5F7
