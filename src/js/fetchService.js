@@ -19,21 +19,16 @@ export default async function fetchPixa({ str: searchString, page }) {
   const ret = await axios
     .get(url, option)
     .then(data => {
-      console.log(data);
-
+      // console.log(data);
       return data;
     })
     // .then(data => data.data.hits)
     .catch(error => {
-      console.log('fetchSerice ERROR', error);
+      // console.log('fetchSerice ERROR', error);
       throw error;
     });
 
-  // console.log('ret: ', ret);
   const fetchCountresName = name => {};
 
-  // console.log('option: ', option);
-  // console.log('pageCount: ', this.pageCount);
   return ret;
-  // s;
 }

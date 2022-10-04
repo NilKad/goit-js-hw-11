@@ -11,7 +11,9 @@ export default function galleryMarkup(data) {
     } = dataMarkup;
     return `
   <div class="photo-card">
-      <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+      <a href="${largeImageURL}">
+        <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+      </a>
       <div class="card-info">
         <p class="card-info__item">
           <b>Likes</b><br>${likes}
